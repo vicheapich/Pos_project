@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": ["../../../../../apps/my_app/my_app/public/js/get_cookies.bundle.js"],
+  "sourcesContent": ["let cookies = frappe.get_cookies()\n// console.log(cookies)\nif(cookies.module_profile === \"Pos Saller\"){\n    window.location.href = \"/app/point-of-sale\"\n    document.cookie = \"module_profile = None;\"\n}"],
+  "mappings": ";;AAAA,MAAI,UAAU,OAAO,YAAY;AAEjC,MAAG,QAAQ,mBAAmB,cAAa;AACvC,WAAO,SAAS,OAAO;AACvB,aAAS,SAAS;AAAA,EACtB;",
+  "names": []
+}

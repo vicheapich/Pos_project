@@ -12,11 +12,11 @@ app_license = "MIT"
 
 # include js, css files in header of desk.html
 # app_include_css = "/assets/my_app/css/my_app.css"
-# app_include_js = "/assets/my_app/js/my_app.js"
+app_include_js = ['get_cookies.bundle.js']
 
 # include js, css files in header of web template
 # web_include_css = "/assets/my_app/css/my_app.css"
-# web_include_js = "/assets/my_app/js/my_app.js"
+web_include_js = "/assets/my_app/js/custom_pos/remove_sign_up.js"
 
 # include custom scss in every website theme (without file extension ".scss")
 # website_theme_scss = "my_app/public/scss/website"
@@ -109,6 +109,11 @@ app_license = "MIT"
 #		"on_trash": "method"
 #	}
 # }
+# doc_events ={
+# 	"Registration":{
+# 		"after_insert":"payments.api.register_require"
+# 	}
+# }
 
 # Scheduled Tasks
 # ---------------
@@ -190,3 +195,10 @@ app_license = "MIT"
 # auth_hooks = [
 #	"my_app.auth.validate"
 # ]
+# website_redirects = [
+#     {"source": "/app", "target": "/app/point-of-sale"}
+# ]
+
+
+on_session_creation = "my_app.cookies.check_role"
+on_logout = "my_app.cookies.clean_cookies"
