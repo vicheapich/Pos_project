@@ -191,12 +191,12 @@ def get_report_summary(data,filters):
 			'value':total_name,
 			'indicator': 'Blue',
 			'label': 'Total Invoice',
-			'datatype': 'Int',
+			'datatype': 'float',
 		},
 		{
 			'value':total_amounts,
 			'indicator': 'Green',
 			'label': 'Total Amount',
-			'datatype': 'Int',
+			'datatype': 'float',
 		}
 	]

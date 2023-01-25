@@ -20,7 +20,7 @@
  "list_columns": [],
  "login_required": 0,
  "max_attachment_size": 0,
- "modified": "2023-01-23 19:57:29.410419",
+ "modified": "2023-01-24 16:12:51.704303",
  "modified_by": "Administrator",
  "module": "My app",
  "name": "sign-up",
@@ -118,7 +118,7 @@
    "max_length": 11,
    "max_value": 0,
    "read_only": 0,
-   "reqd": 0,
+   "reqd": 1,
    "show_in_filter": 0
   },
   {
