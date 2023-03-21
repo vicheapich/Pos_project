@@ -1,6 +1,6 @@
 ## My app
 
-about pos
+Point-of-self
 
 #### License
 
